@@ -1,0 +1,31 @@
+<svg width="110" height="112" viewBox="0 0 110 112" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<rect x="17.4674" y="11.1135" width="64" height="63.9918" rx="20" transform="rotate(-9.99999 17.4674 11.1135)" fill="white"/>
+<g filter="url(#filter0_dd_2578_35731)">
+<rect x="17.4674" y="11.1135" width="64" height="64" rx="16" transform="rotate(-9.99999 17.4674 11.1135)" fill="white" fill-opacity="0.01" shape-rendering="crispEdges"/>
+</g>
+<rect x="17.4674" y="11.1135" width="64" height="63.9918" rx="15" transform="rotate(-9.99999 17.4674 11.1135)" fill="url(#pattern0_2578_35731)"/>
+<defs>
+<filter id="filter0_dd_2578_35731" x="0" y="2.53261" width="109.076" height="109.076" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+<feMorphology radius="6" operator="erode" in="SourceAlpha" result="effect1_dropShadow_2578_35731"/>
+<feOffset dy="8"/>
+<feGaussianBlur stdDeviation="5"/>
+<feComposite in2="hardAlpha" operator="out"/>
+<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.1 0"/>
+<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_2578_35731"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+<feMorphology radius="5" operator="erode" in="SourceAlpha" result="effect2_dropShadow_2578_35731"/>
+<feOffset dy="20"/>
+<feGaussianBlur stdDeviation="12.5"/>
+<feComposite in2="hardAlpha" operator="out"/>
+<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.1 0"/>
+<feBlend mode="normal" in2="effect1_dropShadow_2578_35731" result="effect2_dropShadow_2578_35731"/>
+<feBlend mode="normal" in="SourceGraphic" in2="effect2_dropShadow_2578_35731" result="shape"/>
+</filter>
+<pattern id="pattern0_2578_35731" patternContentUnits="objectBoundingBox" width="1" height="1">
+<use xlink:href="#image0_2578_35731" transform="scale(0.00781209 0.0078135)"/>
+</pattern>
+<image id="image0_2578_35731" width="128" height="128" preserveAspectRatio="none" xlink:href="data:image/jpeg;base64,/9j/2wBDAAgICAgJCAkKCgkNDgwODRMREBARExwUFhQWFBwrGx8bGx8bKyYuJSMlLiZENS8vNUROQj5CTl9VVV93cXecnNH/2wBDAQgICAgJCAkKCgkNDgwODRMREBARExwUFhQWFBwrGx8bGx8bKyYuJSMlLiZENS8vNUROQj5CTl9VVV93cXecnNH/wgARCACAAIADASIAAhEBAxEB/8QAGwABAAEFAQAAAAAAAAAAAAAAAAQBAgMFBgf/xAAYAQEBAQEBAAAAAAAAAAAAAAAAAgMEAf/aAAwDAQACEAMQAAAA9/AAAAAAAAAAAAAAAAAAAAo86rD0ZSs7gAAAANBhkVzR5mPJ7G5EdgAAACDOJ5yXhk3zYbrbjciOsAAAACBrOiVjzsjdHgTuAAAAAAAAAAAAAAAAAB//xAAxEAACAgECAgcFCQAAAAAAAAACAwEEBQARBnQSISIwMTayE0JgYWIUFTI1QVFxcnX/2gAIAQEAAT8A+CWOUod2MEI/cpiNRMFETExMTG8THfMMFgRmUCIxvMz4REafi7GXstuU0Mmqx8DEnPXO/icRPu6WArAQGNhGIiI+Ud79637b2ji6QPUrsk0z6AyX06ZUyuTcpGQFNetHaJa2dKWzGm7o4hpoWUiqKB9iOod4nvbT25iwdCmcjVCdrL4/X6A1eQFK7w6hHYXDjjoj/XTo34mxPLO1b80VOQP1d5lat6whaa7hSLC2cfvwH0/OdZBQ0FYZFXdS4vLGYGdt/wCdZgYHK8P8wz06b5lxXLO1c80VOQP1d7nfx4j/AEA1mvzbh/mGenTfMuK5Z2rnmipyB+rvcvirNxdX7O1YNS+GxJxO3Vp2I4he+s47dPpoKSDYC8Z0eH4hO2i1Nun7VQEA9ktti1XxmTHIruXbFcpBJLiFDMePwv8A/8QAHhEBAAEDBQEAAAAAAAAAAAAAAQACIEASMUFx0dL/2gAIAQIBAT8AxKQd28J5ecdM+bypJqcT/8QAIxEBAAEDAwQDAQAAAAAAAAAAAQIDETEAICESE0BBUXOxwf/aAAgBAwEBPwDxK1WVMOmHVJ9b51JS5ipAQU9q241YL5XuxFcu6USUWLh1Mt3AwSp/ppzL74/zfOjCaqy5th+NFCA3vLN8+/E//9k="/>
+</defs>
+</svg>

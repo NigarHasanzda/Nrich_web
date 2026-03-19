@@ -6,11 +6,15 @@ import OurWork from "@/components/_ournetwork/OurWork";
 import OurSolutions from "@/components/_oursolutions/OurSolutions";
 import OurSolutionKeyFeature from "@/components/_oursolutions/OurSolutionKeyFeature";
 import AboutSection from "@/components/_aboutus/AboutUS";
+import StatisticsGrid from "@/components/_statisticgrid/StatisticGrid";
+import StudentFeedbackCard from "@/components/_feedback/StudentFeedback";
 
 export default function Home() {
   return (
     <>
       <HeroSection/>
+      <StudentFeedbackCard/>
+      <StatisticsGrid/>
       <AboutSection/>
       <OurSolutionKeyFeature/>
       <OurWork/>

@@ -14,24 +14,26 @@ const SHARED_CONTENT = {
 };
 
 const sections = [
-  { tag: "Who We Are", image: "/animals1.svg", imageLeft: true },
-  { tag: "Our Mission", image: "/animals2.svg", imageLeft: false },
-  { tag: "Our Vision", image: "/animals3.svg", imageLeft: true },
+  { tag: "Who We Are", image: "/Aboutimg1.png", imageLeft: true },
+  { tag: "Our Mission", image: "/Aboutimg2.png", imageLeft: false },
+  { tag: "Our Vision", image: "/Aboutimg3.png", imageLeft: true },
 ];
 
 export default function AboutSection() {
   return (
     <section className="bg-white py-24 px-6">
       <div className="max-w-[1240px] mx-auto">
-        <h1 className="text-[48px] md:text-[64px] font-bold text-center text-[#1A1C1E] mb-32 tracking-tight">
+        <h1 className={`text-[48px] md:text-[64px] font-bold text-center text-[#1A1C1E] mb-2 tracking-tight ${quicksand.className}`}>
           About Us
         </h1>
-
-        <div className="flex flex-col gap-40">
+        <h3 className={`text-[18px] md:text-[30px] font-medium text-center text-[#1A1C1E] mb-26 tracking-tight ${quicksand.className}`}>
+          Operators, Not Just Coders. 
+        </h3>
+        <div className="flex flex-col gap-4">
           {sections.map((item, index) => (
             <div
               key={index}
-              className={`flex flex-col md:flex-row items-center justify-between gap-16 md:gap-24 ${
+              className={`flex flex-col md:flex-row items-center justify-between gap-1 md:gap-24 ${
                 item.imageLeft ? "" : "md:flex-row-reverse"
               }`}
             >

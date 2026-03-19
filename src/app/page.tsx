@@ -17,7 +17,7 @@ export default function Home() {
       <StatisticsGrid/>
       <AboutSection/>
       <OurSolutionKeyFeature/>
-      <OurWork/>
+      {/* <OurWork/> */}
       <FAQSection/>
       <ContactSection/>
     </>

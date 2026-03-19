@@ -13,19 +13,19 @@ const quicksand = Quicksand({
 export default function OurSolutions() {
   const solutions = [
     {
-      icon: "/football.svg",
+      icon: "/calendar.png",
       title: "Football Academies",
       description:
         "Manage tryouts, team rosters, and seasonal tournament scheduling with ease.",
     },
     {
-      icon: "/tennis.svg",
+      icon: "/person.png",
       title: "Tennis Clubs",
       description:
         "Optimize court bookings, private lesson scheduling, and club membership billing.",
     },
     {
-      icon: "/swimming.svg",
+      icon: "/kubok.png",
       title: "Swimming Schools",
       description:
         "Track level progression, certificate issuance, and lane availability in real-time.",
@@ -39,7 +39,7 @@ export default function OurSolutions() {
         Our Solutions
       </h2>
 
-      <div className="grid md:grid-cols-3 gap-[28px]">
+      <div className="grid md:grid-cols-3 gap-9">
         {solutions.map((item, i) => (
           <FeatureCard key={i} {...item} />
         ))}

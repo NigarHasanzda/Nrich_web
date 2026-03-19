@@ -21,7 +21,7 @@ export default function FeatureCard({
   return (
     <div className="bg-white  min-h-[232px]  rounded-[24px] py-8  px-10 text-left shadow-[0_10px_30px_rgba(0,0,0,0.05)] hover:shadow-[0_15px_40px_rgba(0,0,0,0.08)] transition">
       
-      <div className="w-12 h-12 flex items-center justify-center rounded-xl bg-[#F1F3F5] mb-4">
+      <div className="w-12 h-12 flex items-center justify-center rounded-xl bg-[#EFF6FF] mb-4">
         <img src={icon} alt={title} className="w-6 h-6 object-contain" />
       </div>
 

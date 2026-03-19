@@ -5,25 +5,44 @@ export default function HeroSection() {
   return (
     <section className="relative w-full min-h-screen bg-white pt-16 md:pt-24 pb-20 flex flex-col items-center select-none overflow-hidden">
       
-      {/* Floating Icons with Rotation */}
-      {[
-        { src: "/charticon.svg", pos: "top-[12%] left-[15%]", rotate: "-rotate-12" },
-        { src: "/Chart.svg", pos: "top-[18%] right-[12%]", rotate: "rotate-12 " },
-        { src: "/Chart.svg", pos: "bottom-[35%] left-[10%]", rotate: "-rotate-[20deg] " },
-      ].map((icon, i) => (
-        <div 
-          key={i} 
-          className={`absolute ${icon.pos} ${icon.rotate} hidden md:block transition-transform hover:scale-110 duration-300`}
-        >
-          <Image 
-            src={icon.src} 
-            alt="icon" 
-            width={67} 
-            height={67} 
-            className="drop-shadow-sm"
-          />
-        </div>
-      ))}
+{[
+
+  { 
+    src: "/rocket.png", 
+    pos: "top-[19%] right-[22%]", 
+    rotate: "rotate-18",
+    bg: "bg-[#FFF7ED]"
+  },
+
+  // LEFT TOP (degree)
+  { 
+    src: "/degree.png", 
+    pos: "top-[15%] left-[22%]", 
+    rotate: "-rotate-19",
+    bg: "bg-gray-100"
+  },
+
+  // LEFT BOTTOM (attachment under degree)
+  { 
+    src: "/attachment.svg", 
+    pos: "top-[38%] left-[28%]", 
+    rotate: "-rotate-[20deg]",
+    bg: "bg-red-100"
+  },
+].map((icon, i) => (
+  <div 
+    key={i} 
+    className={`absolute ${icon.pos} ${icon.rotate} hidden md:flex items-center justify-center w-[50px] h-[50px] rounded-xl ${icon.bg} transition-transform hover:scale-110 duration-300`}
+  >
+    <Image 
+      src={icon.src} 
+      alt="icon" 
+      width={24} 
+      height={24} 
+      className="drop-shadow-sm"
+    />
+  </div>
+))}
 
       {/* Hero Text */}
       <div className="max-w-5xl mx-auto text-center px-6 relative z-10 flex flex-col items-center">

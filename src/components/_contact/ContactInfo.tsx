@@ -1,4 +1,5 @@
-// ContactInfo.tsx
+"use client";
+import React from "react";
 import { Phone, Mail, MapPin } from "lucide-react";
 
 export default function ContactInfo() {

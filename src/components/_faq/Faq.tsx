@@ -38,7 +38,7 @@ export default function FAQSection() {
   };
 
   return (
-    <section className="min-h-screen flex items-center justify-center px-4 md:px-6 py-10">
+    <section id="faqs" className="min-h-screen flex items-center justify-center px-4 md:px-6 py-10">
       <div className="w-full max-w-[95%] md:max-w-[75%] bg-white rounded-[28px] md:rounded-[40px] shadow-[0_10px_40px_rgba(0,0,0,0.06)] py-10 md:py-16 px-5 md:px-24">
         
         <div className="flex items-center justify-center mb-8 md:mb-12">

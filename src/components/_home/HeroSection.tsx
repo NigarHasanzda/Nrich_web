@@ -14,7 +14,6 @@ export default function HeroSection() {
     bg: "bg-[#FFF7ED]"
   },
 
-  // LEFT TOP (degree)
   { 
     src: "/degree.png", 
     pos: "top-[15%] left-[22%]", 
@@ -22,7 +21,6 @@ export default function HeroSection() {
     bg: "bg-gray-100"
   },
 
-  // LEFT BOTTOM (attachment under degree)
   { 
     src: "/attachment.svg", 
     pos: "top-[38%] left-[28%]", 

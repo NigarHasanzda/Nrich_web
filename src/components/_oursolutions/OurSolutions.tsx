@@ -33,7 +33,7 @@ export default function OurSolutions() {
   ];
 
   return (
-    <section className="py-12 md:py-16 text-center">
+    <section id="solutions" className="py-12 md:py-16 text-center">
       
       <h2 className={`text-[28px] md:text-[48px]  ${quicksand.className} font-semibold mb-10 text-[#1A1C1E]`}>
         Our Solutions

@@ -49,7 +49,7 @@ export default function KeyFeatures() {
   ];
 
   return (
-    <section className={`py-12 md:py-16 text-center ${quicksand.className}`}>
+    <section id="features" className={`py-12 md:py-16 text-center ${quicksand.className}`}>
       
       <h2 className="text-[28px] md:text-[48px] font-semibold mb-10 text-[#1A1C1E]">
         Key Features

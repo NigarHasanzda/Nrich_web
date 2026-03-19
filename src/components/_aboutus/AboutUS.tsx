@@ -21,7 +21,7 @@ const sections = [
 
 export default function AboutSection() {
   return (
-    <section className="bg-white py-24 px-6">
+    <section id="about" className="bg-white py-24 px-6">
       <div className="max-w-[1240px] mx-auto">
         <h1 className={`text-[48px] md:text-[64px] font-bold text-center text-[#1A1C1E] mb-2 tracking-tight ${quicksand.className}`}>
           About Us

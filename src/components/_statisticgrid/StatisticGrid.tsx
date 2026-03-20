@@ -1,6 +1,7 @@
 "use client";
 import React from "react";
 import MovingIcon from "@mui/icons-material/Moving";
+import { motion } from "framer-motion";
 
 export default function StatisticsGrid() {
   return (
@@ -78,9 +79,17 @@ export default function StatisticsGrid() {
               </div>
             </div>
 
-            {/* CHART */}
+            {/* CHART ANIMATED */}
             <div className="flex-1 flex items-end justify-between gap-2 md:gap-3 relative pt-12">
-              <div className="absolute top-[58%] left-0 w-full border-t border-dashed border-[#3B82F6]" />
+              
+              {/* Dashed Line Animation */}
+              <motion.div 
+                initial={{ width: 0 }}
+                whileInView={{ width: "100%" }}
+                transition={{ duration: 1, ease: "easeInOut" }}
+                viewport={{ once: true }}
+                className="absolute top-[58%] left-0 border-t border-dashed border-[#3B82F6] z-0" 
+              />
 
               {[
                 { h: "20%", label: "1st" },
@@ -90,21 +99,30 @@ export default function StatisticsGrid() {
                 { h: "85%", label: "5th", active: true },
                 { h: "100%", label: "6th" },
               ].map((bar, i) => (
-                <div key={i} className="flex-1 flex flex-col items-center">
+                <div key={i} className="flex-1 flex flex-col items-center z-10">
                   
                   <div className="relative w-full flex items-end justify-center h-40 md:h-48">
                     
                     {bar.active && (
-                      <span className="absolute -top-8 md:-top-10 text-[11px] md:text-[12px] bg-[#1D61E7] text-white px-2 py-1 rounded font-bold shadow-sm">
+                      <motion.span 
+                        initial={{ opacity: 0, y: 10 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        transition={{ delay: 1, duration: 0.4 }}
+                        viewport={{ once: true }}
+                        className="absolute -top-8 md:-top-10 text-[11px] md:text-[12px] bg-[#1D61E7] text-white px-2 py-1 rounded font-bold shadow-sm"
+                      >
                         89%
-                      </span>
+                      </motion.span>
                     )}
 
-                    <div
+                    <motion.div
+                      initial={{ height: 0 }}
+                      whileInView={{ height: bar.h }}
+                      transition={{ duration: 0.8, delay: i * 0.1, ease: "easeOut" }}
+                      viewport={{ once: true }}
                       className={`w-full max-w-[40px] md:max-w-[50px] ${
                         bar.active ? "bg-[#1D61E7]" : "bg-[#F1F3F5]"
                       } rounded-lg`}
-                      style={{ height: bar.h }}
                     />
                   </div>
 

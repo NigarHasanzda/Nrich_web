@@ -1,8 +1,10 @@
 "use client";
+import FadeInRightWhenVisible from "@/FadeInWhenVisible/FadeInWhenVisible";
 import React from "react";
 export default function ContactForm() {
   return (
-    <div className="bg-white rounded-2xl p-6 md:p-10 lg:p-12 shadow-md">
+  <FadeInRightWhenVisible>
+      <div className="bg-white rounded-2xl p-6 md:p-10 lg:p-12 shadow-md">
       <h2 className="text-[28px] md:text-[36px] lg:text-[48px] font-semibold mb-2">
         Get in touch
       </h2>
@@ -38,6 +40,7 @@ export default function ContactForm() {
         </button>
       </form>
     </div>
+  </FadeInRightWhenVisible>
   );
 }
 

@@ -1,10 +1,12 @@
 "use client";
 import React from "react";
 import { Phone, Mail, MapPin } from "lucide-react";
+import FadeInLeftWhenVisible from "@/FadeInWhenVisible/FadeInLeftWhenVisible";
 
 export default function ContactInfo() {
   return (
-    <div className="bg-blue-600 min-h-[520px] md:min-h-[647px] w-full md:w-[599px] text-white rounded-2xl p-6 md:p-8 lg:p-10 relative overflow-hidden flex flex-col">
+  <FadeInLeftWhenVisible>
+      <div className="bg-blue-600 min-h-[520px] md:min-h-[647px] w-full md:w-[599px] text-white rounded-2xl p-6 md:p-8 lg:p-10 relative overflow-hidden flex flex-col">
       
       <h2 className="text-[24px] md:text-[30px] lg:text-[36px] font-semibold">
         Contact Us
@@ -48,5 +50,6 @@ export default function ContactInfo() {
       <div className="absolute bottom-[-120px] md:bottom-[-150px] right-[-80px] md:right-[-120px] w-64 h-64 md:w-90 md:h-90 bg-white/10 rounded-full" />
       <div className="absolute bottom-[60px] md:bottom-[100px] right-[60px] md:right-[120px] w-24 h-24 md:w-36 md:h-36 bg-white/10 rounded-full" />
     </div>
+  </FadeInLeftWhenVisible>
   );
 }

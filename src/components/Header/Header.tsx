@@ -23,7 +23,7 @@ const Header = () => {
       <header className="w-full py-6 flex justify-center sticky top-0  z-50">
         <div className="w-full max-w-[90%] bg-white rounded-[20px] shadow-[0_4px_30px_rgba(0,0,0,0.06)] px-6 py-[18px] flex items-center justify-between border border-gray-50/50">
 
-          <Link href="/" className="flex items-center gap-1">
+          <Link href="/" className="flex w-[90px] md:w-[200px] items-center gap-1">
             <img src="/Logo.svg" alt="logo" />
           </Link>
 

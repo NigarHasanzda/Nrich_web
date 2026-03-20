@@ -1,6 +1,7 @@
 "use client";
 import Image from "next/image";
 import { Quicksand } from "next/font/google";
+import FadeInLeftWhenVisible from "@/FadeInWhenVisible/FadeInLeftWhenVisible";
 
 const quicksand = Quicksand({
   subsets: ["latin"],
@@ -37,9 +38,10 @@ export default function AboutSection() {
                 item.imageLeft ? "" : "md:flex-row-reverse"
               }`}
             >
-              {/* Şəkil */}
-              <div className="flex-shrink-0 w-full max-w-[441px] md:w-[441px] h-auto md:h-[441px] rounded-[40px] overflow-hidden">
-                <Image
+
+              <div className="flex-shrink-0 w-full  md:w-[441px] h-auto md:h-[441px] rounded-[40px] overflow-hidden">
+               <FadeInLeftWhenVisible>
+                 <Image
                   src={item.image}
                   alt={item.tag}
                   width={561}
@@ -47,21 +49,21 @@ export default function AboutSection() {
                   className="w-full h-auto md:h-[461px] object-cover block"
                   priority={index === 0}
                 />
+               </FadeInLeftWhenVisible>
               </div>
 
-              {/* Mətn */}
               <div className="w-full md:flex-1 flex flex-col items-start mt-8 md:mt-0">
-                <span className="bg-[#EEF4FF] text-[#1D61E7] text-[13px] font-bold uppercase tracking-[0.1em] px-4 py-1.5 rounded-lg mb-8">
+                <span className="bg-[#EEF4FF] text-[#1D61E7] text-[10px] md:text-[13px] font-bold uppercase tracking-[0.1em] px-4 py-1.5 rounded-lg mb-8">
                   {item.tag}
                 </span>
 
                 <h2
-                  className={`text-[26px] md:text-[42px] leading-[1.05] ${quicksand.className} font-semibold text-[#1A1C1E] mb-8 whitespace-pre-line tracking-tight`}
+                  className={`text-[24px] md:text-[42px] leading-[1.05] ${quicksand.className} font-semibold text-[#1A1C1E] mb-8 whitespace-pre-line tracking-tight`}
                 >
                   {SHARED_CONTENT.title}
                 </h2>
 
-                <p className={`text-[#6C757D] text-[18px] md:text-[20px] leading-[1.6] max-w-[500px] ${quicksand.className} font-medium`}>
+                <p className={`text-[#6C757D] text-[16px] md:text-[20px] leading-[1.6] max-w-[500px] ${quicksand.className} font-medium`}>
                   {SHARED_CONTENT.description}
                 </p>
               </div>

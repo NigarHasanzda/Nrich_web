@@ -2,6 +2,9 @@
 import React from "react";
 import MovingIcon from "@mui/icons-material/Moving";
 import { motion } from "framer-motion";
+import FadeInLeftWhenVisible from "@/FadeInWhenVisible/FadeInLeftWhenVisible";
+import FadeInRightWhenVisible from "@/FadeInWhenVisible/FadeInWhenVisible";
+import FadeInFromBottom from "@/FadeInWhenVisible/FadeFromBottom";
 
 export default function StatisticsGrid() {
   return (
@@ -10,10 +13,10 @@ export default function StatisticsGrid() {
         
         {/* ÜST SIRA */}
         <div className="grid grid-cols-1 md:grid-cols-12 gap-6 mb-6">
-          
-          {/* 1 */}
+        
           <div className="md:col-span-4 bg-white rounded-[24px] p-6 md:p-8 border border-[#E9ECEF] shadow-[0_4px_20px_rgba(0,0,0,0.05)] flex flex-col justify-center min-h-[260px] md:h-[300px]">
-            <h2 className="text-[26px] md:text-[32px] font-bold text-[#1A1C1E] leading-tight mb-4 md:mb-6">
+           <FadeInLeftWhenVisible>
+             <h2 className="text-[26px] md:text-[32px] font-bold text-[#1A1C1E] leading-tight mb-4 md:mb-6">
               100,000+ <br /> Organizations
             </h2>
             <p className="text-[14px] md:text-[15px] leading-[22px] md:leading-[24px] text-[#6C757D]">
@@ -21,29 +24,28 @@ export default function StatisticsGrid() {
               solution provides your business the competitive advantage it needs
               to support your mission and community.
             </p>
+           </FadeInLeftWhenVisible>
           </div>
 
-          {/* 2 IMAGE */}
-          <div className="md:col-span-4 rounded-[24px] overflow-hidden min-h-[260px] md:h-[300px]">
-            <img
-              src="/statisticgrid.png"
-              alt="statistics"
-              className="w-full h-full object-cover"
-            />
+          <div className="md:col-span-4  rounded-[34px] overflow-hidden min-h-[260px] md:h-[300px]">
+            <img src="/statisticgrid.png" alt="statistics" className="w-full h-full  rounded-4xl object-cover" />
           </div>
 
-          {/* 3 */}
+     
           <div className="md:col-span-4 bg-white rounded-[24px] p-6 md:p-8 border border-[#E9ECEF] shadow-[0_4px_20px_rgba(0,0,0,0.05)] flex flex-col justify-between min-h-[260px] md:h-[300px]">
             <div className="flex items-start justify-between">
-              <h3 className="text-[14px] md:text-[15px] font-bold text-[#1A1C1E] leading-snug max-w-[180px]">
+             <FadeInRightWhenVisible>
+               <h3 className="text-[14px] md:text-[15px] font-bold text-[#1A1C1E] leading-snug max-w-[180px]">
                 Growth: Administrative Efficiency.
               </h3>
               <div className="w-8 h-8 rounded-full border border-gray-200 flex items-center justify-center shrink-0">
                 <MovingIcon sx={{ fontSize: 16, color: "#1A1C1E" }} />
               </div>
+             </FadeInRightWhenVisible>
             </div>
 
-            <div>
+            <FadeInRightWhenVisible>
+              <div>
               <span className="text-[56px] md:text-[72px] font-bold text-[#1A1C1E] leading-none tracking-tighter">
                 80%
               </span>
@@ -52,13 +54,14 @@ export default function StatisticsGrid() {
                 automate 90% by 2027.
               </p>
             </div>
+            </FadeInRightWhenVisible>
           </div>
         </div>
 
         {/* ALT SIRA */}
         <div className="grid grid-cols-1 md:grid-cols-12 gap-6">
           
-          {/* 4 */}
+
           <div className="md:col-span-8 bg-white rounded-[24px] p-6 md:p-10 border border-[#E9ECEF] shadow-[0_4px_20px_rgba(0,0,0,0.05)] flex flex-col lg:flex-row gap-8 min-h-[320px] md:h-[350px]">
             
             <div className="flex flex-col justify-between shrink-0">
@@ -81,8 +84,7 @@ export default function StatisticsGrid() {
 
             {/* CHART ANIMATED */}
             <div className="flex-1 flex items-end justify-between gap-2 md:gap-3 relative pt-12">
-              
-              {/* Dashed Line Animation */}
+
               <motion.div 
                 initial={{ width: 0 }}
                 whileInView={{ width: "100%" }}
@@ -136,13 +138,15 @@ export default function StatisticsGrid() {
 
           {/* 5 */}
           <div className="md:col-span-4 bg-white rounded-[24px] p-6 md:p-10 border border-[#E9ECEF] shadow-[0_4px_20px_rgba(0,0,0,0.05)] flex flex-col justify-center min-h-[260px] md:h-[350px]">
-            <h2 className="text-[48px] md:text-[64px] font-bold text-[#1A1C1E] leading-none mb-4">
+           <FadeInFromBottom>
+             <h2 className="text-[48px] md:text-[64px] font-bold text-[#1A1C1E] leading-none mb-4">
               80 hours
             </h2>
             <p className="text-[15px] md:text-[16px] leading-[24px] md:leading-[26px] text-[#6C757D]">
               Every month, our unified platform gives you back two full work weeks
               to grow your mission.
             </p>
+           </FadeInFromBottom>
           </div>
         </div>
       </div>
